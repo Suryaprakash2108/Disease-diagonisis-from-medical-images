@@ -50,10 +50,9 @@ This project uses deep learning to classify histopathological images of lung and
 
 ## 🖼️ Output
 
-The model predicts the class of a histopathological image (lung or colon cancer) based on visual patterns.  
-Performance plots and prediction functions are included in the notebook.
 
----
+---![WhatsApp Image 2025-06-11 at 23 29 04_2bffe0c8](https://github.com/user-attachments/assets/ae5bb034-8cf9-45af-bbd4-ec03f909ff7f)
+
 
 ## 🛠️ Tech Stack
 
