@@ -25,12 +25,6 @@ lung-and-colon-cancer/
 └── model/
 └── saved_model/ # Saved model for inference
 
-🚀 How to Run
-1. Clone the repository or upload the notebook to Google Colab.
-2. Ensure the dataset is uploaded in the correct structure.
-3. Run each cell in sequence to train and evaluate the model.
-4. Adjust the hyperparameters or model architecture for experimentation.
-
 📊 Model Summary
 The CNN model is trained to classify images into multiple classes using layers like:
 - Conv2D
