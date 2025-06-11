@@ -1,3 +1,4 @@
+---
 ##🧬 Lung and Colon Cancer Classification Using CNN – Deep Learning Project  
 This project uses deep learning to classify histopathological images of lung and colon cancer. Leveraging a powerful CNN architecture with InceptionResNetV2 as the backbone, it aims to automate cancer diagnosis and assist healthcare professionals with high accuracy.
 
