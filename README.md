@@ -1,50 +1,54 @@
-Lung and Colon Cancer Classification
+🧬 Lung and Colon Cancer Classification Using CNN – Deep Learning Project
+This project utilizes Convolutional Neural Networks (CNNs) to classify histopathological images of lung and colon cancer tissues. It aims to assist early diagnosis by accurately distinguishing between cancerous and non-cancerous tissues using deep learning.
 
-This project uses Convolutional Neural Networks (CNNs) to classify medical images for **lung and colon cancer detection**. It leverages image preprocessing, data augmentation, and deep learning techniques to improve diagnostic accuracy.
+🔬 Built as part of an academic project by Mopada Surya Prakash, UG Scholar at Mohan Babu University, Tirupati, India.
 
-🧪 Dataset
-The dataset consists of labeled histopathological images of lung and colon tissues. It is organized into multiple classes (e.g., lung cancer, colon cancer, healthy tissues). The dataset should be structured in subfolders by class within the `train/`, `val/`, and `test/` directories.
+🚀 Project Overview
+🧪 Problem Statement: Diagnosing cancer through medical imaging can be time-consuming and prone to human error. This project proposes a CNN-based approach to automate and improve the accuracy of cancer detection from histopathological images.
 
-🔧 Technologies Used
-- Python
-- TensorFlow / Keras
-- NumPy & Pandas
-- OpenCV & PIL
-- Matplotlib & Seaborn
-- Google Colab / Jupyter Notebook
+🧠 Solution: The model is trained on a labeled dataset of lung and colon tissue samples. It uses a deep CNN pipeline enhanced with transfer learning (InceptionResNetV2) to classify images with high precision.
 
-📁 File Structure
-lung-and-colon-cancer/
-│
-├── lung-and-colon-cancer.ipynb # Main notebook with model training and evaluation
-├── README.md # Project documentation
-├── dataset/
-│ ├── train/
-│ ├── val/
-│ └── test/
-└── model/
-└── saved_model/ # Saved model for inference
+📊 Use Case: Designed to support pathologists and researchers in medical diagnosis, research, and healthcare technology development.
 
- 📊 Model Summary
-The CNN model is trained to classify images into multiple classes using layers like:
-- Conv2D
-- MaxPooling2D
-- Dropout
-- Dense (Softmax for multi-class classification)
+📂 Files Included
+lung-and-colon-cancer.ipynb – Jupyter Notebook for training, evaluation, and predictions
+dataset/ – Folder containing training, validation, and test image data
+outputs/ – Trained model and result visualizations
+README.md – This documentation file
 
-Validation accuracy and loss graphs are also included for performance evaluation.
+🧱 Model Architecture
+InceptionResNetV2 as feature extractor (transfer learning)
+Flattened output passed through:
 
-📈 Results
-The model achieves high training and validation accuracy. Confusion matrix and classification report are included for deeper insights into class-wise performance.
+Dense(512) → Dropout(0.2) → Dense(512) → Dropout(0.2) → Dense(n_classes, softmax)
+Optimizer: Adam
+Loss Function: Sparse Categorical Crossentropy
 
-📌 Note
-- You can use GPU acceleration in Google Colab for faster training.
-- Make sure the dataset paths are correctly set in the notebook before execution.
+📈 Model Performance
 
-🧠 Future Work
-- Model deployment as a Flask web app
-- Integration with real-time medical diagnostic tools
-- Transfer learning using pretrained models (e.g., ResNet, EfficientNet)
+Metric	Value
+Train Accuracy	92.78%
+Validation Accuracy	91.52%
+Test Accuracy	91.84%
+Test Loss	182.54
 
-👨‍⚕️ Disclaimer
-This tool is for research and educational purposes only. It is not a substitute for professional medical diagnosis.
+The model demonstrates strong generalization and high accuracy across all datasets.
+
+📸 Output
+Histopathological images are classified into cancerous and non-cancerous categories.
+Actual vs Predicted visualizations and loss/accuracy curves are generated in the notebook.
+
+🛠️ Tech Stack
+Python
+TensorFlow / Keras
+NumPy, Pandas, OpenCV, PIL
+Matplotlib, Seaborn
+Jupyter Notebook
+
+🎯 Future Enhancements
+
+Add classification heatmaps using Grad-CAM
+
+Extend model to other types of cancer datasets
+
+Deploy as a web or mobile diagnostic tool
